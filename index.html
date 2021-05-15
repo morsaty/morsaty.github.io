@@ -8,7 +8,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link rel="icon" href="/images/logo.png" type="image/x-icon"/>
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;500;900&display=swap" rel="stylesheet">
-
+    <script src="https://code.jquery.com/jquery-3.6.0.js" integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" crossorigin="anonymous"></script>
     <link href="css/style.css" type="text/css" rel="stylesheet">
     <title>FF Development</title>
 </head>
@@ -34,17 +34,17 @@
             </a>
             </li>
             <li class="main-navigation__menu-item">
-              <a href="#about-us" class="main-navigation__link">
+              <a href="#about-us" class="main-navigation__link js-aboutus">
                 O nas
             </a>
             </li>
             <li class="main-navigation__menu-item">
-              <a href="#projects" class="main-navigation__link">
+              <a href="#projects" class="main-navigation__link js-projects">
                 Projekty
             </a>
             </li>
             <li class="main-navigation__menu-item">
-              <a href="#contact" class="main-navigation__link">
+              <a href="#contact" class="main-navigation__link js-contact">
                  Kontakt
             </a>
             </li>
@@ -75,13 +75,11 @@
                 <h1>O nas</h1>
                 <p class="text">
                   Jesteśmy firmą, która z powodzeniem radzi sobie na polskim rynku.<br>
-                  Naszymi podstawowymi założeniami jest solidność, realizacja projektów w terminie, wychodzenie naprzeciw oczekiwaniom klientów.Zajmujemy się realizacją projektów od A do Z, czyli od znalezienia odpowiedniego ,,miejsca do życia” do przekazania Państwu kluczy do własnego domu.<br>
-Celem naszej firmy jest budowanie ładnych, nowoczesnych domów i mieszkań o podwyższonym standardzie w przystępnych cenach.asi pracownicy służą fachową radą i pomocą na każdym etapie budowy inwestycji.<br>
+                  Naszymi podstawowymi założeniami jest solidność, realizacja projektów w terminie, wychodzenie naprzeciw oczekiwaniom klientów. Zajmujemy się realizacją projektów od A do Z, czyli od znalezienia odpowiedniego ,,miejsca do życia” do przekazania Państwu kluczy do własnego domu.<br>
+Celem naszej firmy jest budowanie ładnych, nowoczesnych domów i mieszkań o podwyższonym standardzie w przystępnych cenach. Nasi pracownicy służą fachową radą i pomocą na każdym etapie budowy inwestycji.<br>
                 </p>
                 <div class="skills">
-                    <span>Zapraszamy</span>
-                    <span>do</span>
-                    <span>współpracy</span>
+                    <span>Zapraszamy do współpracy</span>
                 </div>
             </div>
         </div>
@@ -123,6 +121,19 @@ Celem naszej firmy jest budowanie ładnych, nowoczesnych domów i mieszkań o po
 			</div>
 		</div>
     </section>
+
+<!-- socials sidebar -->
+    <ul id="social-sidebar">
+      <li>
+        <a class="entypo-facebook"><span>Facebook</span></a>
+      </li>
+      <li>
+        <a class="entypo-instagrem"><span>Instagram</span></a>
+      </li>
+    </ul>
+  <!-- socials end -->
+
+
 
     <footer>
         <span><p class="footer-text"><span class="footer-letter">Xxxx Xxxxx Development @2021
