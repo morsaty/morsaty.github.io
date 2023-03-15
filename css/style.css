@@ -84,6 +84,7 @@ body {
 	display: none;
 } */
 .nav {
+	/* display: flex; */
 	position: absolute;
 	top: 0;
 	left: 0;
@@ -99,6 +100,7 @@ body {
 .nav .nav-links {
 	display: flex;
 	align-items: center;
+	/* justify-content: space-between; */
 }
 
 .nav .nav-links li a::after {
@@ -133,6 +135,7 @@ a {
 	width: 70px;
 	height: 70px;
 	fill: #8c7051;
+	/* margin-right: 10rem; */
 }
 .nav .nav-links {
 	column-gap: 30px;
@@ -143,7 +146,7 @@ a {
 }
 
 .nav .nav-btn {
-	font-size: 2rem;
+	font-size: 1.8rem;
 	text-transform: uppercase;
 	outline: none;
 	padding: 1.5rem 2rem;
@@ -163,6 +166,7 @@ a {
 
 .nav .navOpenBtn {
 	display: none;
+	visibility: none;
 }
 
 /* header */
@@ -194,7 +198,7 @@ video#herovd {
 	align-items: center;
 	flex-direction: column;
 	height: 100vh;
-	font-family: Caveat;
+	font-family: 'Caveat';
 }
 
 .header-container p {
@@ -210,7 +214,7 @@ video#herovd {
 
 .header-description {
 	font-size: 4rem !important;
-	font-family: 'Raleway', sa;
+	font-family: 'Raleway', sans-serif;
 }
 
 .mouse {
@@ -452,22 +456,165 @@ div.img-area {
 	transition: background-color 0.3s;
 	border-radius: 8px;
 	border: none;
+	margin-right: 7.5rem;
 }
 
 .check-prices-bgc a:hover {
 	background-color: #a38562;
 }
 
-/* OPEN HOURS */
+/* CONTACT */
 
-.open-hours h1 {
+.contactus {
+	padding-bottom: 10rem;
+}
+
+.contactus h1 {
 	padding-top: 10rem;
-	padding-bottom: 2rem;
+	padding-bottom: 5rem;
 	text-transform: uppercase;
 	font-size: 3.5rem;
 	text-align: center;
 }
 
+.contactus-wrapper {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	width: 100%;
+}
+
+.contactus-map {
+	/* width: 50%; */
+}
+.contactus-map iframe {
+	width: 500px;
+	height: 400px;
+	box-shadow: 0 5px 10px #999;
+}
+
+.contactus-info {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	margin-left: 4rem;
+}
+
+.contactus-info h2 {
+	text-align: center;
+	text-transform: uppercase;
+}
+
+.contactus-description {
+	color: #987a58;
+}
+
+.contactus-header {
+	font-size: 1.6rem;
+	text-transform: uppercase;
+	font-weight: bold;
+	margin-top: 3.5rem;
+}
+
+.contactus-header2 {
+	margin-top: 1rem;
+}
+
+/* FOOTER */
+
+footer {
+	background-color: #111;
+	box-shadow: 5px 5x 5px #999;
+}
+
+.footer-wrapper {
+	display: flex;
+	justify-content: space-evenly;
+	align-items: center;
+	padding: 3rem;
+	/* height: 50vh; */
+}
+
+.footer-left {
+	/* border-right: 1px solid white; */
+	padding-right: 3rem;
+}
+
+.footer-left p {
+	font-size: 9rem;
+	color: white;
+	font-family: 'Caveat';
+}
+
+.footer-left svg {
+	width: 80px;
+	height: 80px;
+	fill: #8c7051;
+}
+
+.footer-left-description {
+	font-size: 3rem !important;
+	font-family: 'Raleway', sans-serif !important;
+}
+
+.footer-center-border {
+	height: 30vh;
+	width: 1px;
+	background-color: #e5e5e5;
+	border-bottom: 1px solid white;
+}
+.footer-right {
+	padding-left: 3rem;
+	color: #e5e5e5;
+}
+
+.footer-right h2 {
+	align-self: flex-start;
+	justify-self: flex-start;
+	font-size: 3.5rem;
+	color: #e5e5e5;
+	padding-bottom: 1rem;
+}
+
+.footer-right .working-hours td {
+	padding: 0.8rem;
+}
+
+.footer-right .closed-hour {
+	color: #8c7051;
+}
+
+.footer-socials {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	border-top: 1px solid white;
+}
+
+/* .footer-socials p {
+	font-size: 2rem;
+	color: white;
+	margin-right: 2rem;
+} */
+.footer-socials i,
+.footer-socials p {
+	font-size: 2rem;
+	color: white;
+	padding-top: 1.5rem;
+	padding-bottom: 1.5rem;
+	margin-right: 2.5rem;
+}
+
+.footer-socials i {
+	cursor: pointer;
+	transition: color 0.3s;
+	color: #8c7051;
+}
+
+.footer-socials i:hover {
+	color: #e5e5e5;
+}
 /* RESPONSIVE */
 @media screen and (max-width: 1260px) {
 	.nav {
@@ -498,6 +645,15 @@ div.img-area {
 		line-height: 0.65rem;
 	}
 }
+
+@media screen and (max-width: 785px) {
+	.check-prices-bgc a {
+		align-self: flex-end;
+		margin-right: unset;
+		margin: 0 4rem 8rem 0;
+	}
+}
+
 @media screen and (max-width: 768px) {
 	.nav .navOpenBtn,
 	.nav .navCloseBtn,
@@ -546,6 +702,32 @@ div.img-area {
 	.team-3 {
 		background-position: 50% 50%;
 	}
+	.contactus-wrapper {
+		flex-direction: column;
+	}
+	.contactus-map {
+		margin-bottom: 4rem;
+	}
+	.contactus-info {
+		margin-left: 0rem;
+	}
+}
+
+@media screen and (max-width: 705px) {
+	.footer-left p {
+		font-size: 6rem;
+	}
+	
+	.footer-left svg {
+		width: 60px;
+		height: 60px;
+		fill: #8c7051;
+	}
+	
+	.footer-left-description {
+		font-size: 2.5rem !important;
+		font-family: 'Raleway', sans-serif !important;
+	}
 }
 
 @media screen and (max-width: 576px) {
@@ -564,4 +746,8 @@ div.img-area {
 	.team-2 {
 		background-position: 20% 50%;
 	}
+	.check-prices-bgc h3 {
+		font-size: 2.5rem;
+	}
+	
 }
