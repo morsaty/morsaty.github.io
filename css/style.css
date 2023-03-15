@@ -273,7 +273,7 @@ video#herovd {
 	justify-content: center;
 	align-items: center;
 	margin: 3rem;
-	/* box-shadow: 0 40px 20px rgba(0, 0, 0, 0.3); */
+	box-shadow: 0 1px 5px rgba(0, 0, 0, 0.3);
 }
 
 .img-area {
@@ -311,18 +311,6 @@ textarea {
 	outline: none;
 }
 
-/* input[type='date'] {
-	width: 100%;
-	padding: 0.25rem 0 0.25rem 0.5rem;
-	border-right-width: 0;
-}
-
-input[type='time'] {
-	width: 100%;
-	padding: 0.25rem 0.5rem 0.25rem 0;
-	border-left-width: 0;
-} */
-
 input[type='datetime-local'] {
 	color: #757575;
 }
@@ -330,19 +318,6 @@ input[type='datetime-local'] {
 	color: #757575;
 	padding-left: 0.5rem;
 }
-
-/* .appointment-right input:nth-of-type(1) {
-	max-width: 50%;
-}
-
-.appointment-right input:nth-of-type(2) {
-	max-width: calc(50% - 2rem);
-	margin-left: 1rem;
-}
-
-.appointment-right input:nth-of-type(3) {
-	max-width: 50%;
-} */
 
 .appointment-right a {
 	background-color: #8c7051;
@@ -354,11 +329,12 @@ input[type='datetime-local'] {
 	border-radius: 25px;
 	text-transform: uppercase;
 	font-weight: 900;
+	border: none;
 	transition: background-color 0.3s;
 }
 
 .appointment-right a:hover {
-	background-color: #7c6f5f;
+	background-color: #a38562;
 }
 
 div.img-area {
@@ -383,9 +359,11 @@ div.img-area {
 	display: flex;
 	align-items: center;
 	justify-content: space-evenly;
+	overflow: hidden !important;
 }
 
 .team-col {
+	position: relative;
 	display: flex;
 	flex-direction: column;
 	justify-content: center;
@@ -393,18 +371,15 @@ div.img-area {
 	align-items: center;
 	height: 400px;
 	width: 100%;
-	position: relative;
 	z-index: 1;
-	border-right: 3px solid #fff;
+	margin: 0 0.5rem;
 }
 
 .team-1 {
 	background-image: url('/img/team1.jpg');
 	background-size: cover;
 	background-position: 50% 40%;
-	margin-left: 0.5rem;
 }
-
 
 .team-2 {
 	background-image: url('/img/team2.jpg');
@@ -415,8 +390,8 @@ div.img-area {
 .team-3 {
 	background-image: url('/img/team3.jpg');
 	background-size: cover;
-	background-position: 50% 80%;
-	margin-right: 0.5rem;
+	background-position: 50% 70%;
+	/* margin-right: 0.5rem; */
 }
 
 .team-col h3 {
@@ -425,7 +400,75 @@ div.img-area {
 	font-size: 3rem;
 }
 
-/* */
+.team-col p {
+	color: white;
+	text-transform: uppercase;
+}
+
+/* check prices */
+
+.check-prices {
+	padding-top: 10rem;
+}
+
+.check-prices-bgc {
+	display: flex;
+	position: relative;
+	justify-content: space-evenly;
+	align-items: center;
+	background-image: url('/img/check-prices.jpg');
+	background-position: 10% 50%;
+	background-attachment: fixed;
+	background-repeat: no-repeat;
+	background-size: cover;
+	height: 250px;
+	z-index: 1;
+}
+
+.shadow-prices {
+	background-color: rgba(0, 0, 0, 0.5);
+}
+
+.check-prices-bgc h3 {
+	font-size: 3.5rem;
+	font-weight: lighter;
+	color: white;
+	text-transform: uppercase;
+	letter-spacing: 0.2rem;
+	/* position: absolute; */
+}
+
+.check-prices-bgc i {
+	font-size: 3rem;
+}
+
+.check-prices-bgc a {
+	padding: 0.8em 2.5em;
+	/* margin-left: 4rem; */
+	text-transform: uppercase;
+	text-decoration: none;
+	background-color: #8c7051;
+	color: #fff;
+	transition: background-color 0.3s;
+	border-radius: 8px;
+	border: none;
+}
+
+.check-prices-bgc a:hover {
+	background-color: #a38562;
+}
+
+/* OPEN HOURS */
+
+.open-hours h1 {
+	padding-top: 10rem;
+	padding-bottom: 2rem;
+	text-transform: uppercase;
+	font-size: 3.5rem;
+	text-align: center;
+}
+
+/* RESPONSIVE */
 @media screen and (max-width: 1260px) {
 	.nav {
 		padding: 1.5rem 0.5rem;
@@ -506,6 +549,9 @@ div.img-area {
 }
 
 @media screen and (max-width: 576px) {
+	.mouse {
+		margin-bottom: 5rem;
+	}
 	.appointment-right h2 {
 		font-size: 2.7rem;
 	}
