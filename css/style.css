@@ -711,6 +711,100 @@ footer {
 .footer-socials i:hover {
 	color: #e5e5e5;
 }
+
+/* PRICING.HTML */
+
+.nav-pricing {
+	background-color: #52483e;
+	/* height: auto; */
+	box-shadow: 0 10px 10px rgba(0, 0, 0, 0.11);
+}
+
+.pricing-container {
+	margin: 0 auto;
+	padding: 0 2rem;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	min-height: 100vh;
+	flex-direction: column;
+	flex-wrap: wrap;
+}
+
+/* Pricing Styles */
+#pricing {
+	background-color: #f2f2f2;
+	padding: 6rem 0;
+	/* height: 100vh; */
+}
+
+#pricing h2 {
+	text-align: center;
+	margin-bottom: 4rem;
+	font-size: 4.5rem;
+}
+
+.pricing-table {
+	display: flex;
+	justify-content: center;
+}
+
+.pricing-column {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+	background-color: #fff;
+	border-radius: 8px;
+	box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.1);
+	margin: 0 20px;
+	padding: 3rem 2rem;
+	text-align: center;
+	width: 30%;
+}
+
+.pricing-column h3 {
+	font-size: 2.7rem;
+	margin-bottom: 20px;
+}
+
+.pricing-column h4 {
+	color: #999;
+	font-size: 1.8rem;
+	margin-bottom: 30px;
+}
+
+.pricing-column ul {
+	list-style: none;
+	padding: 0;
+	margin: 0;
+	text-align: center;
+}
+
+.pricing-column ul li {
+	margin-bottom: 10px;
+}
+
+.pricing-column .pricing-btn {
+	background-color: #8c7051;
+	border: none;
+	border-radius: 4px;
+	color: #fff;
+	cursor: pointer;
+	font-size: 16px;
+	padding: 1.2rem 2.4rem;
+	text-align: center;
+	text-decoration: none;
+	transition: background-color 0.3s ease;
+	margin-top: auto;
+}
+
+.pricing-column .pricing-btn:hover {
+	background-color: #ac8962;
+}
+
+/* ---- */
+
 /* RESPONSIVE */
 @media screen and (max-width: 1260px) {
 	.nav {
@@ -723,6 +817,22 @@ footer {
 		line-height: 0.75rem;
 	}
 }
+
+@media only screen and (max-width: 1181px) {
+	.pricing-container {
+		margin-top: 8rem;
+	}
+	.pricing-table {
+		flex-wrap: wrap;
+	}
+	.pricing-column {
+		margin-bottom: 40px;
+		/* width: 70%; */
+		flex-grow: 1;
+		flex-basis: calc(100% / 3);
+	}
+}
+
 @media screen and (max-width: 960px) {
 	.nav {
 		padding: 1.5rem 0.5rem;
@@ -845,6 +955,18 @@ footer {
 	.contactus-info {
 		margin-left: 0rem;
 	}
+	.pricing-container {
+		margin-top: 8rem;
+	}
+	.pricing-table {
+		flex-wrap: wrap;
+	}
+	.pricing-column {
+		margin-bottom: 40px;
+		/* width: 50%; */
+		flex-grow: 0;
+		flex-basis: 75%;
+	}
 }
 
 @media screen and (max-width: 705px) {
@@ -930,6 +1052,17 @@ footer {
 	.nav-mobile-container-top svg {
 		width: 50px;
 		height: 50px;
+	}
+	.pricing-container {
+		margin-top: 8rem;
+	}
+	.pricing-table {
+		flex-wrap: wrap;
+	}
+	.pricing-column {
+		margin-bottom: 40px;
+		/* width: 50%; */
+		flex-basis: 100%;
 	}
 }
 
