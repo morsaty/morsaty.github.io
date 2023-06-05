@@ -5,7 +5,7 @@ This project is a website for a barber shop that offers a range of haircuts, sha
 
 ## Demo
 
-https://6447111d5a8431372197403c--tranquil-kringle-60b389.netlify.app
+https://morsaty.github.io
 
 ## Technologies Used
 
